@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProAuto Oradea - Parcul Auto & Piese Auto</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            color: #333;
+            background: #e8ebef url('https://www.transparenttextures.com/patterns/white-diamond.png');
+            background-attachment: fixed;
+        }
+
+        header {
+            background: linear-gradient(135deg, #003366, #990000, #555);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #ddd;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 16px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #990000;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.01);
+        }
+
+        h2 {
+            color: #003366;
+            border-left: 6px solid #990000;
+            padding-left: 15px;
+            font-size: 2em;
+        }
+
+        p {
+            line-height: 1.7em;
+            font-size: 1.1em;
+        }
+
+        /* LOGO DESPRE NOI */
+        .about-logo {
+            text-align: center;
+            margin: 20px 0 40px 0;
+        }
+
+        .about-logo img {
+            width: 180px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about-logo img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+        }
+
+        /* GALERIE MAȘINI */
+        .cars {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .cars img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.25);
+            transition: all 0.3s ease;
+        }
+
+        .cars img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+        }
+
+        /* PIESE AUTO */
+        .piese {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .piese img {
+            width: 100%;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .piese img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        /* CONTACT */
+        #contact p {
+            font-size: 1.1em;
+        }
+
+        a {
+            color: #990000;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 0.95em;
+            border-top: 4px solid #990000;
+        }
+
+        @media (max-width: 768px) {
+            .cars img {
+                width: 90%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ProAuto Oradea</h1>
+    <p>Parc auto și magazin de piese auto - Calitate garantată!</p>
+</header>
+
+<nav>
+    <a href="#despre">Despre Noi</a>
+    <a href="#masini">Mașini</a>
+    <a href="#piese">Piese Auto</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="despre">
+    <h2>Despre Noi</h2>
+    
+    <div class="about-logo">
+        <img src="logo.png" alt="Logo ProAuto Oradea">
+    </div>
+	
+    <p>
+        La <strong>ProAuto Oradea</strong> punem accent pe transparență, seriozitate și calitate.
+        Fiecare autoturism din parcul nostru auto este verificat tehnic în detaliu, cu un istoric clar și documente complete, pentru a oferi clienților noștri siguranță și încredere deplină.
+    </p>
+    <p>
+        Oferim o gamă variată de autoturisme second-hand atent selecționate, provenite din surse sigure, potrivite atât pentru uz personal, cât și pentru companii.
+        Echipa noastră te ajută să alegi mașina potrivită, prin consiliere personalizată, astfel încât să te bucuri de o achiziție corectă și avantajoasă.
+    </p>
+    <p>
+        La ProAuto Oradea ai libertatea de a alege modalitatea de plată care ți se potrivește: plată cash, în rate avantajoase sau prin leasing auto, în colaborare cu instituții financiare de încredere.
+        Indiferent de opțiune, ne asigurăm că procesul de cumpărare este rapid, sigur și transparent.
+    </p>
+    <p>
+        În plus, oferim servicii complete de publicitate și promovare auto, pentru partenerii care doresc să își valorifice rapid autoturismele.
+        Prin magazinul nostru ProAuto Piese din Oradea punem la dispoziție piese auto originale și aftermarket pentru toate mărcile importante – Audi, Volkswagen, BMW, Nissan, Ford, Opel și altele.
+    </p>
+    <p>
+        Ne mândrim cu o reputație solidă în piața auto locală, construită pe baza seriozității, respectului față de client și a unui singur obiectiv:
+        să oferim cele mai bune servicii auto la cele mai corecte prețuri.
+    </p>
+</section>
+
+<section id="masini">
+    <h2>Mașini</h2>
+    <div class="cars">
+        <img src="audi.jpeg" alt="Audi A4">
+        <img src="passat.jpeg" alt="Volkswagen Passat">
+        <img src="minicooper.jpeg" alt="Mini Cooper">
+        <img src="nissan.jpeg" alt="Nissan Qashqai">
+		<img src="passat2.jpeg" alt="Volkswagen Passat">
+		<img src="golf5.jpeg" alt="Volkswagen Golf V">
+		<img src="audia3.jpg" alt="Audi A3">
+		<img src="fiesta.jpg" alt="Ford Fiesta">
+		<img src="mazda.jpeg" alt="Mazda">
+		<img src="skoda.jpg" alt="Skoda">
+		<img src="tiguan.jpg" alt="Volkswagen Tiguan">
+		<img src="wvgolf.jpg" alt="Volkswagen Golf V">
+		<img src="x6.jpg" alt="BMW X6">
+		<img src="kia.jpg" alt="Kia">
+		<img src="scenic.jpg" alt="Renault Scenic">
+		<img src="golf6plus.jpg" alt="Volkswagen Golf VI Plus">
+		<img src="minicoopermulte.jpg" alt="Mini Cooper">
+		<img src="reclama.jpg" alt="Clientii nostri">
+    </div>
+</section>
+
+<section id="piese">
+    <h2>Piese Auto</h2>
+    <p>
+        Vizitează magazinul <strong>ProAuto Piese</strong> din Oradea, Str. Bumbacului nr. 24, unde găsești o gamă completă de piese auto:
+        frâne, filtre, uleiuri, baterii, amortizoare și accesorii de încredere. Produsele noastre respectă standardele internaționale
+        și se potrivesc perfect pentru Audi, Volkswagen, Nissan, BMW, Ford, Opel și multe alte mărci.
+    </p>
+    <div class="piese">
+        <img src="ulei.jpeg" alt="Ulei motor">
+        <img src="baterie.jpeg" alt="Baterie auto">
+        <img src="disk.jpeg" alt="Disc frână">
+        <img src="odorizant.jpeg" alt="Odorizant">
+		<img src="capacejante.jpeg" alt="Capace jante">
+		<img src="accesorii.jpeg" alt="Accesorii Auto">
+        <img src="becuri.jpeg" alt="Led-uri ">				
+        <img src="curea.jpeg" alt="Curele de distributie">
+		<img src="huse.jpeg" alt="Huse banchete auto">
+		<img src="curatare.jpeg" alt="Set curatare auto">
+		<img src="solutii.jpeg" alt="Solutii curatare auto">
+		<img src="cabluri.jpeg" alt="Cabluri de curent auto">
+		<img src="presuri.jpeg" alt="Mochete">
+		<img src="adaptoare.jpeg" alt="Adaptoare Bluethoot">
+	</div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p><strong>ProAuto Oradea</strong></p>
+    <p>Parc auto: Calea Clujului nr. 277, Oradea</p>
+    <p>Magazin piese auto: Str. Bumbacului nr. 24, Oradea</p>
+	<p>Adresa de mail: proautooradea@gmail.com<p>
+    <p>Telefon: <a href="tel:+40756166463">0756 166 463</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 ProAuto Oradea | Toate drepturile rezervate | Design by ProAuto Team</p>
+</footer>
+
+</body>
+</html>
